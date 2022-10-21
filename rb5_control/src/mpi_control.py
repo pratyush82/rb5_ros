@@ -57,13 +57,13 @@ class MegaPiController:
     def carRotate(self, speed):
         if self.verbose:
             print("CAR ROTATE:")
-        self.setFourMotors(speed, speed, speed, speed)
+        self.setFourMotors(speed*2, speed*2, speed*2, speed*2)
 
 
     def carSlide(self, speed):
         if self.verbose:
             print("CAR SLIDE:")
-        self.setFourMotors(speed, speed, -speed, -speed)
+        self.setFourMotors(speed*1.1, speed*1.2, -speed*1.3, -speed*1.2)
 
     
     def carMixed(self, v_straight, v_rotate, v_slide):
