@@ -20,9 +20,9 @@ AprilDetection det;
 
 // TODO: Replace these parameters using your calibration results
 double distortion_coeff[] = 
-	{0.008549, -0.016273, -0.002954, -0.003708, 0.000000};
-double intrinsics[] = {683.558755,    0.     ,  961.607445,
-                       0.     ,  680.809134,  547.701668,
+	{0.014662, -0.018461, 0.001551, -0.004257, 0.000000};
+double intrinsics[] = {686.659890, 0.000000, 961.429753,
+                       0.000000, 685.713008, 541.286810,
                        0.     ,    0.     ,    1.};
 
 const cv::Mat d(cv::Size(1, 5), CV_64FC1, distortion_coeff);
